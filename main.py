@@ -279,11 +279,8 @@ client.run("ODQ1MzM0NzQ3Nzk3NzgyNTU5.YKfdVQ.oem6KccZj-Sv7YCrLzL7N2LIfOI")
 
 """
 TODO:
-None types delete
-If not types fiX
 levelup config
 !help addition
-
 """
 
 
