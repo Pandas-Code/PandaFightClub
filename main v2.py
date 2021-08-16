@@ -6,7 +6,6 @@ import json
 import os
 import random
 from discord.ext import commands
-
 from discord.utils import _unique
 
 class Character:
@@ -63,6 +62,17 @@ def exp(n):
         out+="⬛"
     
     return out
+
+client = commands.Bot(command = "!")
+
+@client.event
+async def on_ready():
+    print("Beep Boop")
+
+@client.command()
+async def moin(ctx):
+    await ctx.send("Moinsen")
+
 
 class MyClient(discord.Client):
     global Char1
@@ -275,7 +285,6 @@ class MyClient(discord.Client):
                     db_file.write(json.dumps(Char1.__dict__))
 
 
-client=MyClient()
 client.run("ODQ1MzM0NzQ3Nzk3NzgyNTU5.YKfdVQ.oem6KccZj-Sv7YCrLzL7N2LIfOI")
 
 """
